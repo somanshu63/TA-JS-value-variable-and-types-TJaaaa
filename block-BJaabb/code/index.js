@@ -8,10 +8,10 @@
 var user = prompt("enter user");
 alert(`user is ${user}`);
 var userName = user;
-console.log(user), console.log(userName);
+console.log(user, userName);
 var age = 22, isLearning = true;
 user = `john`, userName = user;
-console.log(user), console.log(userName);
+console.log(user, userName);
 
 
 /* 2.
@@ -25,7 +25,9 @@ alert(`sum is ${sum}`);
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; _j + 2) console.log(j);
+for (let j = 0; j <= 10; _j += 2){
+ console.log(j);
+}
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
 for(let i = 9; i > 0; i = i - 2)
@@ -41,6 +43,7 @@ while(i >= 0){
     i = Number(i) - 1;
 }
 console.log(sum);
+
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
 i = 10;
 let sum = " ";
@@ -65,11 +68,11 @@ Example:
 "hello", -21; // false
 
 */
-var num1 = prompt('enter first value');
-var num2 = prompt('enter second value');
-if(num1 === num2){
-    alert(`${num1}, ${num2}; // true`);
+var num1 = +prompt('enter first value');
+var num2 = +prompt('enter second value');
+if(isNaN(num1) || isNaN(num2)){
+    alert(`enter a valid value`);
 }
 else{
-    alert(`${num1}, ${num2}; // false`);
+    alert(`${num1}, ${num2}; // true`);
 }

@@ -36,13 +36,15 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
-let hello;
-n = Number(prompt("enter number of e"));
-for(let n = 1; n < 10; n += 1)
-{
-  console.log(e);
+let count = +prompt("enter the number of e");
+const start = "h";
+const end = "llo";
+let middle = "";
+for(let i = 0; i < count; i++){
+  middle += "e";
 }
-alert(hello);
+alert(start + middle + end);
+
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
@@ -54,7 +56,8 @@ for (let i = 1; i <= number; i++ )
 {
   sum += i;
 }
-alert(sum);
+alert("the value of sum is "sum);
+
 /* Switch Statement
 
  🎖Using switch statement do the following
@@ -74,36 +77,36 @@ Take a number value from user and alert the message if it matches the conditions
 */
 // [Your code goes here]
 let value = Number(prompt("enter value"));
-switch (true) {
+switch (number) {
   case value == 1:
-    alert("[ ] ONE");
+    alert(" ONE");
     break;
     case value == 2:
-    alert("[ ] TWO");
+    alert(" TWO");
     break;
     case value == 3:
-    alert("[ ] THREE");
+    alert(" THREE");
     break;
     case value == 4:
-    alert("[ ] FOUR");
+    alert(" FOUR");
     break;
     case value == 5:
-    alert("[ ] FIVE");
+    alert(" FIVE");
     break;
     case value == 6:
-    alert("[ ] SIX");
+    alert(" SIX");
     break;
     case value == 7:
-    alert("[ ] SEVEN");
+    alert(" SEVEN");
     break;
     case value == 8:
-    alert("[ ] EIGHT");
+    alert(" EIGHT");
     break;
     case value == 9:
-    alert("[ ] NINE");
+    alert(" NINE");
     break;
   default:
-    alert("PLEASE TRY AGAIN, IF IT IS NONE OF ABOVE");
+    alert("PLEASE TRY AGAIN");
     break;
 }
 
@@ -152,6 +155,7 @@ switch (true) {
     alert("invalid marks");
     break;
 }
+
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */

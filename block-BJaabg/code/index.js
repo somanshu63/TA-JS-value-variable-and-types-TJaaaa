@@ -13,6 +13,15 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
+var purchase_amount = 0;
 // your code goes here
+for(bank_balance = 303.91; bank_balance < 99.99; bank_balance - PHONE_PRICE)
+{
+    for(purchase_amount = 0; purchase_amount < SPENDING_THRESHOLD; SPENDING_THRESHOLD - purchase_amount)
+    {
+        purchase_amount = PHONE_PRICE + ACCESSORY_PRICE + TAX_RATE; 
+    }
+}
+alert(bank_balance);
 
 // ⛑ Answer of the above will `$334.76`.
